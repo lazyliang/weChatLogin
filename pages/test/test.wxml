@@ -1,0 +1,11 @@
+<button bindtap="info">帅哥图</button>
+<!-- <image      src="{{img}}"
+ class="userinfo-img"
+ ></image>  -->
+ <view class="info_body" wx:for="{{arr}}" wx:for-index="index" wx:for-item="item">
+ <image      src="{{item.avatar_url}}"
+ class="userinfo-img"
+ ></image> 
+ </view>
+
+<button bindta="makePhoneCall">打电话</button>

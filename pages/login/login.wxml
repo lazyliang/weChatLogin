@@ -1,0 +1,10 @@
+<view class='container'>
+  <view class='header-box'>
+    <open-data type="userAvatarUrl" class="avatar"></open-data>
+  </view>
+  <view class='login-box'>
+    <input class='login-input' placeholder='请输入账号' type="text" placeholder-class="placeholder" bindinput='onInputChange' data-type='username'></input>
+    <input class='login-input' placeholder='请输入密码' type="text" password placeholder-class="placeholder" bindinput='onInputChange' data-type='password'></input>
+    <button class='login-btn' hover-class="btn-hover" bindtap='onLogin'>登录</button>
+  </view>
+</view>

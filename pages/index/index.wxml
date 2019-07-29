@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+ 
+ <image      src="http://img.aonestep.com/group1/M00/00/02/rBISPFobigGAAW5OAABvOg70x6g113.jpg"
+ class="userinfo-img"
+ ></image>
+  <view class="link">
+  
+  </view>
+  <view class="usermotto">
+  <button bindtap="tiaozhuan" open-type="tiaozhuan" bindtiaozhuan="tiaozhuan">进入登录界面</button>
+    <!-- <text class="user-motto">{{motto}}</text> -->
+  </view>
+</view>
+
